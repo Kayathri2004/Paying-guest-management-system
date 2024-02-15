@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room Details</title>
+  <style>
+    /* body {
+      background-image: url("https://img.freepik.com/premium-vector/pink-dots-seamless-pattern_541792-69.jpg"); /* Replace with the actual path or URL of your image */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    } */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .page-header {
+      position: relative;
+      background-color: white;
+      color: black;
+      padding: 0.2rem; /* Decreased padding */
+      width: 40%; /* Decreased width */
+      margin: 0 auto; /* Center the header */
+      margin-bottom: 40px;
+    }
+
+    .header-box {
+      border: 5px solid black;
+      padding: 0.2rem; /* Decreased padding */
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 30px; /* Decreased font size */
+      margin: 0; /* Remove margin */
+      padding: 0.5rem; /* Adjust padding */
+    }
+    body {
+      background-color: wheat;
+    }
+    .images-container {
+      display: flex;
+      flex: 1; /* Occupy remaining space */
+    }
+    .pg-image {
+      flex: 1;
+      margin-right: 1rem;
+    }
+    .pg-image:first-child {
+      margin-left: 6rem; /* Add left margin to the first image */
+    }
+    .pg-image img {
+      max-width: 100%;
+      /* Decrease the maximum height of the images */
+      max-height: 400px; /* Adjust this value as needed */
+      height: auto;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Adjust the height as needed */
+    }
+    .pg-details {
+      width: 70%; /* Adjust the value to your preferred width */
+      padding: 20px;
+      border: 5px solid black;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    .pg-name {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .pg-location,
+    .pg-rent,
+    .pg-amenities,
+    .room-type,
+    .ac-details,
+    .pg-rules {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .pg-rules h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    .pg-rules ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    .amenity {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    .amenity img {
+      max-width: 40px; /* Adjust the width to your preference */
+      height: auto;
+      vertical-align: middle;
+    }
+    .pg-buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .book-button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: rgb(252, 31, 167);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, text-decoration 0.3s; /* Added transition for text-decoration */
+  text-decoration: none; /* Remove underline by default */
+}
+
+.book-button:hover {
+  background-color: rgba(252, 31, 167, 0.8);
+  text-decoration: none; /* Remove underline on hover */
+}
+  </style>
+</head>
+<body>
+  <div class="page-header">
+    <div class="header-box">
+      <header>
+        <h1>Zolo Expresso PG</h1>
+      </header>
+    </div>
+  </div>
+  <main>
+    <div class="images-container">
+      <div class="pg-image">
+        <img src="https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/Apr/01/full_photo/GR2-361135-1708643.jpg" alt="PG Image 1">
+      </div>
+      <div class="pg-image">
+        <img src="https://img.staticmb.com/mbphoto/pg/grd2/cropped_images/2023/May/04/full_photo/GR2-361135-1738727.png" alt="PG Image 2">
+      </div>
+    </div>
+    <div class="container">
+      <div class="pg-details">
+          <div class="pg-name">PG Details</div>
+          <div class="pg-location">Location:Chengalpattu, Chennai</div>
+          <div class="pg-rent">Rent:4950/month</div>
+          <div class="pg-amenities">
+              Amenities:
+              <div class="amenity">
+                  <img src="https://t4.ftcdn.net/jpg/01/53/55/09/360_F_153550996_KrY2fKkQh4dHCnU4WuTTDRg2QZfDdwDo.jpg" alt="WiFi">
+                  WiFi
+              </div>
+              <div class="amenity">
+                  <img src="https://as1.ftcdn.net/v2/jpg/02/02/39/66/1000_F_202396670_vw88jR5eryQ4aCXfbzviS8uyXfL6Cqmy.jpg" alt="Laundry">
+                  Power backup
+              </div>
+              <div class="amenity">
+                  <img src="https://previews.123rf.com/images/blankstock/blankstock1907/blankstock190700412/126174046-tv-line-icon-television-sign-hotel-service-symbol-quality-design-element-linear-style-tv-icon.jpg" alt="Gym">
+                  TV
+              </div>
+              <div class="amenity">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTy_uCGXSQWZu-WWSFqZz-OtCiyKkVQWi7LeTWCL4I&s" alt="Parking">
+                  Parking
+              </div>
+              <div class="amenity">
+                <img src="https://static3.bigstockphoto.com/3/8/3/large2/383064458.jpg" alt="Parking">
+                Fridge
+            </div>
+              <!-- Add more amenities with images and descriptions -->
+          </div>
+          <div class="room-type">Room Type: Single/Double/Triple Sharing</div>
+          <div class="ac-details">Air Conditioning(AC): Available</div>
+          <div class="ac-details">Available for: Girls and Boys</div>
+          <div class="pg-rules">
+              <h3>House Rules:</h3>
+              <ul>
+                  <li>No Gate closing time</li>
+                  <li>Visitor entry</li>
+                  <li>Non-veg Food</li>
+                  <li>Loud music allowed</li>
+                  <li>Party allowed</li>
+                  <!-- Add more rules as needed -->
+              </ul>
+          </div>
+          <div class="pg-buttons">
+            <a href="login.jsp" class="book-button">Book Now</a>
+          </div>
+      </div>
+  </div>
+  </main>
+</body>
+</html>

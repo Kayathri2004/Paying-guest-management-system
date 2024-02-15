@@ -1,0 +1,318 @@
+:root{
+    --pink:#e84393;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding: 2rem 9%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background: rgba(255, 51, 153, .05);
+}
+.heading span{
+    color: var(--pink);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: var(--pink);
+}
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+}
+ header .logo{
+    font-size:3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span{
+    color: var(--pink);
+}
+header .navbar a{
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+.home{
+    display: flex;
+    align-items: center;
+    background-color:lightpink;
+    background-image: url('https://media.istockphoto.com/id/908356540/photo/3d-render-of-pink-stylish-bedroom.jpg?s=612x612&w=0&k=20&c=z-DDXxwbEZDItAM8mXgHcOj1UJ-oq7R5m5_FpUkn3Pk=');
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    justify-content: center;
+    height: 110vh;
+}
+.home .content{
+    flex: 1;
+    padding-right: 2px; 
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 2rem;
+    color:#999;
+    padding: 1rem 0;
+    line-height: 1;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    pad: 2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex: 1 1 40rem;
+    position: relative;
+}
+.about .row .video-container video{
+    width: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    object-fit: cover;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #999;
+    padding: .5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+
+}
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.icons-container .icons{
+    background: #fff;
+    border: .1rem solid rgba(0,0,0,.1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.book .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.book .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    border: .1rem solid rgba(0,0,0,.1);
+    position: relative;
+}
+.book .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-left: 2rem;
+    overflow: hidden;
+}
+.book .box-container .box .image img{
+    height: 25rem;
+}
+.book .box-container .box:hover .image img{
+    transform: scale(1.1);
+}
+.book .box-container .box .image .icons{
+    position: absolute;
+    bottom: -7rem; left: 0; right: 0;
+    display: flex;
+}
+.book .box-container .box:hover .image .icons{
+    bottom: 0;
+}
+.book .box-container .box:hover .image .icons a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: var(--pink);
+    color: #fff;
+}
+.book .box-container .box:hover .image .icons .cart-btn{
+    border-left: .1rem solid #fff7;
+    border-right: .1rem solid #fff7;
+    width: 100%;
+}
+.book .box-container .box:hover .image .icons a:hover{
+    background: #333;
+}
+.book .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.book .box-container .box .content h3{
+    font-size: 2.5rem;
+    color: #333;
+}
+.book .box-container .box .content .city{
+    font-size: 2.5rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.more-button-container {
+    text-align: center;
+    margin-top: 20px; /* Adjust as needed */
+}
+
+.more-button {
+    display: inline-block;
+    padding: 15px 30px; /* Increase padding for larger button */
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px; /* Increase font size for larger button */
+    transition: background-color 0.3s ease;
+}
+
+.more-button:hover {
+    background-color: #2980b9;
+}
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+@media (max-width:991px){
+html{
+    font-size: 55%
+}
+header{
+    padding: 2rem;
+}
+section{
+    padding: 2rem;
+}
+.home{
+    background-position: center;
+}
+}
+@media (max-width:768px){
+    html .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);;
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: .1rem solid rgb(0, 0, 0, .1);
+        display: block;
+    }
+    .home.content h3{
+        font-size: 5rem;
+    }
+    .home.content span{
+        font-size: 2.5rem; 
+    }
+    .icons-container .icons h3{  
+        font-size: 2rem;
+    }
+    .icons-container .icons span{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    }

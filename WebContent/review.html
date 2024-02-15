@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Paying Guest Management System - Leave a Review</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+  }
+
+  .review-form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+
+  .review-form h1 {
+    text-align: center;
+  }
+
+  .review-form h2 {
+    margin-top: 10px;
+  }
+
+  .review-form label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .review-form input,
+  .review-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .review-form button {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .review-form button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="review-form">
+  <h1>Write a Review</h1>
+  <form action=submitReview.jsp method=post>
+    <h2>Enter details of the PG you want to rate</h2>
+    <label for=name>Name:</label>
+    <input type=text name=name><br>
+    <label for=pgname>PG Name:</label>
+    <input type=text name=pgname><br>
+    <label for=rating>Submit your Rating:</label>
+    <select name=rating>
+      <option value=5>5 - Excellent</option>
+      <option value=4>4 - Very Good</option>
+      <option value=3>3 - Good</option>
+      <option value=2>2 - Fair</option>
+      <option value=1>1 - Poor</option>
+    </select><br>
+    <label for=review>Add a Review:</label>
+    <input type=text name=review><br>
+    <button type=submit>Submit Review</button>
+  </form>
+</div>
+</body>
+</html>
